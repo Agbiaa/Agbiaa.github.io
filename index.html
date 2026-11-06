@@ -1,1 +1,232 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rabiaa Agchar | Data Scientist & AI Engineer Portfolio</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          },
+          colors: {
+            brand: {
+              cyan: '#06b6d4',
+              violet: '#8b5cf6',
+              dark: '#0B0F19',
+              card: '#111827',
+              border: '#1F2937'
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-brand-dark text-gray-200 font-sans antialiased selection:bg-brand-cyan selection:text-black">
 
+  <!-- Navbar -->
+  <nav class="fixed top-0 w-full z-50 backdrop-blur-md bg-brand-dark/80 border-b border-brand-border">
+    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="#" class="font-bold text-xl tracking-tight text-white flex items-center gap-2">
+        <span class="w-3 h-3 rounded-full bg-brand-cyan animate-pulse"></span>
+        Rabiaa.ai
+      </a>
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-400">
+        <a href="#projets" class="hover:text-brand-cyan transition">Projets</a>
+        <a href="#skills" class="hover:text-brand-cyan transition">Compétences</a>
+        <a href="#parcours" class="hover:text-brand-cyan transition">Parcours</a>
+        <a href="#contact" class="hover:text-brand-cyan transition">Contact</a>
+      </div>
+      <a href="mailto:agcharrabiaa38@gmail.com" class="px-4 py-2 text-xs font-semibold rounded-lg bg-brand-cyan/10 text-brand-cyan border border-brand-cyan/30 hover:bg-brand-cyan hover:text-black transition">
+        Recrutez-moi
+      </a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="min-h-screen flex items-center pt-24 px-6 max-w-6xl mx-auto">
+    <div class="grid md:grid-cols-12 gap-12 items-center">
+      <div class="md:col-span-8 space-y-6">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+          À la recherche d'un stage PFE (6 mois)
+        </div>
+        <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white leading-tight">
+          Rabiaa Agchar <br>
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-cyan via-blue-500 to-brand-violet">
+            Data Scientist & AI Engineer
+          </span>
+        </h1>
+        <p class="text-gray-400 text-lg max-w-2xl">
+          Étudiante en Master Analytique & IA. Spécialisée dans la conception de modèles de <span class="text-white font-medium">Computer Vision</span>, l'IA générative (RAG), et le déploiement de <span class="text-white font-medium">pipelines de données temps réel</span> (Kafka, Spark, architecture Médaillon).
+        </p>
+        <div class="flex flex-wrap gap-4 pt-4">
+          <a href="#projets" class="px-6 py-3 rounded-lg bg-brand-cyan text-black font-semibold text-sm hover:shadow-[0_0_20px_rgba(6,182,212,0.4)] transition">
+            Explorer mes projets
+          </a>
+          <a href="https://github.com/Agbiaa" target="_blank" class="px-6 py-3 rounded-lg bg-brand-card text-white font-semibold text-sm border border-brand-border hover:border-gray-500 transition flex items-center gap-2">
+            GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/rabiaa-agchar-976135246/" target="_blank" class="px-6 py-3 rounded-lg bg-brand-card text-white font-semibold text-sm border border-brand-border hover:border-gray-500 transition">
+            LinkedIn
+          </a>
+        </div>
+      </div>
+      <!-- Mini carte tech décorative -->
+      <div class="md:col-span-4 p-6 rounded-2xl bg-brand-card border border-brand-border font-mono text-xs text-gray-400 space-y-3">
+        <div class="flex items-center justify-between pb-3 border-b border-brand-border">
+          <span class="text-gray-500">// Profiling</span>
+          <span class="text-emerald-400">ready.py</span>
+        </div>
+        <p><span class="text-brand-violet">status</span> = "Recherche PFE"</p>
+        <p><span class="text-brand-violet">focus</span> = ["Computer Vision", "Kafka/Spark", "RAG"]</p>
+        <p><span class="text-brand-violet">master</span> = "Analytique & IA (Agadir)"</p>
+        <p><span class="text-brand-violet">certif</span> = "IBM Python Data Science"</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projets Section -->
+  <section id="projets" class="py-24 px-6 max-w-6xl mx-auto">
+    <div class="mb-14">
+      <h2 class="text-xs font-mono uppercase tracking-widest text-brand-cyan mb-2">// Portfolio</h2>
+      <h3 class="text-3xl font-bold text-white">Projets Sélectionnés</h3>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-8">
+      <!-- Projet 1 -->
+      <div class="p-8 rounded-2xl bg-brand-card border border-brand-border hover:border-brand-cyan/50 transition group">
+        <div class="flex gap-2 flex-wrap mb-4 font-mono text-[11px]">
+          <span class="px-2.5 py-1 rounded bg-brand-cyan/10 text-brand-cyan border border-brand-cyan/20">Computer Vision</span>
+          <span class="px-2.5 py-1 rounded bg-brand-border text-gray-300">YOLO</span>
+          <span class="px-2.5 py-1 rounded bg-brand-border text-gray-300">FastAPI</span>
+        </div>
+        <h4 class="text-xl font-bold text-white mb-2 group-hover:text-brand-cyan transition">Classification des Maladies des Olives</h4>
+        <p class="text-gray-400 text-sm leading-relaxed mb-6">
+          Solution d'IA basée sur YOLO pour classifier et diagnostiquer automatiquement les pathologies des oliviers. Inférence exposée via FastAPI et interface interactive Flask.
+        </p>
+        <div class="flex items-center gap-4 text-xs font-mono">
+          <a href="https://github.com/Agbiaa" target="_blank" class="text-brand-cyan hover:underline">Voir le code →</a>
+        </div>
+      </div>
+
+      <!-- Projet 2 -->
+      <div class="p-8 rounded-2xl bg-brand-card border border-brand-border hover:border-brand-violet/50 transition group">
+        <div class="flex gap-2 flex-wrap mb-4 font-mono text-[11px]">
+          <span class="px-2.5 py-1 rounded bg-brand-violet/10 text-brand-violet border border-brand-violet/20">MLOps & NLP</span>
+          <span class="px-2.5 py-1 rounded bg-brand-border text-gray-300">FastAPI</span>
+          <span class="px-2.5 py-1 rounded bg-brand-border text-gray-300">POO</span>
+        </div>
+        <h4 class="text-xl font-bold text-white mb-2 group-hover:text-brand-violet transition">Book Recommendation Engine</h4>
+        <p class="text-gray-400 text-sm leading-relaxed mb-6">
+          Moteur de recommandation basé sur la similarité des métadonnées. Conception orientée objet, décorateurs Python, bonnes pratiques MLOps et API REST FastAPI.
+        </p>
+        <div class="flex items-center gap-4 text-xs font-mono">
+          <a href="https://github.com/Agbiaa" target="_blank" class="text-brand-violet hover:underline">Voir le code →</a>
+        </div>
+      </div>
+
+      <!-- Projet 3 -->
+      <div class="p-8 rounded-2xl bg-brand-card border border-brand-border hover:border-blue-500/50 transition group">
+        <div class="flex gap-2 flex-wrap mb-4 font-mono text-[11px]">
+          <span class="px-2.5 py-1 rounded bg-blue-500/10 text-blue-400 border border-blue-500/20">Data Engineering</span>
+          <span class="px-2.5 py-1 rounded bg-brand-border text-gray-300">Kafka</span>
+          <span class="px-2.5 py-1 rounded bg-brand-border text-gray-300">Spark</span>
+          <span class="px-2.5 py-1 rounded bg-brand-border text-gray-300">Airflow</span>
+        </div>
+        <h4 class="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition">Pipelines Streaming & Architecture Médaillon</h4>
+        <p class="text-gray-400 text-sm leading-relaxed mb-6">
+          Traitement batch et temps réel de données avec ingestion Kafka, transformation Spark et structuration Bronze / Silver / Gold sous Docker.
+        </p>
+        <div class="flex items-center gap-4 text-xs font-mono">
+          <a href="https://github.com/Agbiaa" target="_blank" class="text-blue-400 hover:underline">Détails de l'architecture →</a>
+        </div>
+      </div>
+
+      <!-- Projet 4 -->
+      <div class="p-8 rounded-2xl bg-brand-card border border-brand-border hover:border-emerald-500/50 transition group">
+        <div class="flex gap-2 flex-wrap mb-4 font-mono text-[11px]">
+          <span class="px-2.5 py-1 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">BI & Data Mining</span>
+          <span class="px-2.5 py-1 rounded bg-brand-border text-gray-300">Power BI</span>
+          <span class="px-2.5 py-1 rounded bg-brand-border text-gray-300">Talend</span>
+          <span class="px-2.5 py-1 rounded bg-brand-border text-gray-300">K-Means</span>
+        </div>
+        <h4 class="text-xl font-bold text-white mb-2 group-hover:text-emerald-400 transition">Solution Décisionnelle Vente & Retail</h4>
+        <p class="text-gray-400 text-sm leading-relaxed mb-6">
+          Modélisation d'un entrepôt de données en étoile, flux ETL avec Talend, tableaux de bord Power BI et algorithmes de segmentation client (K-Means).
+        </p>
+        <div class="flex items-center gap-4 text-xs font-mono">
+          <a href="https://github.com/Agbiaa" target="_blank" class="text-emerald-400 hover:underline">Consulter l'étude →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Compétences (Skills) -->
+  <section id="skills" class="py-24 px-6 max-w-6xl mx-auto border-t border-brand-border">
+    <div class="mb-14">
+      <h2 class="text-xs font-mono uppercase tracking-widest text-brand-cyan mb-2">// Stack Technique</h2>
+      <h3 class="text-3xl font-bold text-white">Compétences & Outils</h3>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="p-6 rounded-xl bg-brand-card border border-brand-border">
+        <h4 class="font-bold text-white mb-4 text-base flex items-center gap-2">
+          <span class="text-brand-cyan">●</span> Computer Vision & IA
+        </h4>
+        <p class="text-xs font-mono text-gray-400 leading-6">
+          YOLO, OpenCV, TensorFlow, Keras, CNN, ANN, NLP, GenAI & RAG.
+        </p>
+      </div>
+
+      <div class="p-6 rounded-xl bg-brand-card border border-brand-border">
+        <h4 class="font-bold text-white mb-4 text-base flex items-center gap-2">
+          <span class="text-brand-violet">●</span> Data Eng & Streaming
+        </h4>
+        <p class="text-xs font-mono text-gray-400 leading-6">
+          Apache Kafka, Apache Spark, Airflow, Hadoop, Docker, FastAPI, Flask.
+        </p>
+      </div>
+
+      <div class="p-6 rounded-xl bg-brand-card border border-brand-border">
+        <h4 class="font-bold text-white mb-4 text-base flex items-center gap-2">
+          <span class="text-emerald-400">●</span> Analytics & BI
+        </h4>
+        <p class="text-xs font-mono text-gray-400 leading-6">
+          Power BI, SQL, Talend ETL, Scikit-Learn, Pandas, NumPy, EDA, Modélisation étoile.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Footer -->
+  <footer id="contact" class="py-20 px-6 max-w-6xl mx-auto border-t border-brand-border text-center space-y-6">
+    <h3 class="text-2xl font-bold text-white">Prêt(e) à collaborer ?</h3>
+    <p class="text-gray-400 text-sm max-w-md mx-auto">
+      Disponible pour un stage PFE de 6 mois à partir de 2026/2027 en Data Science / Data Engineering.
+    </p>
+    <div class="flex justify-center gap-4">
+      <a href="mailto:agcharrabiaa38@gmail.com" class="px-6 py-3 rounded-lg bg-brand-cyan text-black font-semibold text-sm hover:opacity-90 transition">
+        agcharrabiaa38@gmail.com
+      </a>
+      <a href="tel:+212636084337" class="px-6 py-3 rounded-lg bg-brand-card text-white border border-brand-border font-semibold text-sm hover:border-gray-500 transition">
+        +212 6 36 08 43 37
+      </a>
+    </div>
+    <p class="text-xs text-gray-600 font-mono pt-8">
+      © Rabiaa Agchar — Conçu pour Data Science & AI Engineering
+    </p>
+  </footer>
+
+</body>
+</html>
